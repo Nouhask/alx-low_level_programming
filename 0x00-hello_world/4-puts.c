@@ -1,4 +1,4 @@
-////////// 4-puts.c
+#!/bin/bash
 #include<stdio.h>
 /**
  * main - Entry point
