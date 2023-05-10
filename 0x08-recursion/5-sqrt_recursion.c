@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
  * @i: repeat
  *
  * Return: the result of square root
- i*/
+ */
 int actual_sqrt_recursion(int n, int i)
 {
 	if (i * i > n)
