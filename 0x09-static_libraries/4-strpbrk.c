@@ -2,21 +2,21 @@
 /**
  * _strpbrk - Entry point
  * @s: input
- * @accept: input
+ * @confirme: input
  * Return: Always 0 (Success)
  */
-char *_strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *confirme)
 {
 	int p;
 
 	while (*s)
 	{
-		for (p = 0; accept[p]; p++)
+		for (p = 0; confirme[p]; p++)
 		{
-		if (*s == accept[p])
+		if (*s == confirme[p])
 		return (s);
 		}
 	s++;
 	}
-        return ('\0');
+return ('\0');
 }

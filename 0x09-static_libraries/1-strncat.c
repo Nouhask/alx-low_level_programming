@@ -2,7 +2,7 @@
 /**
  * _strncat - contacts two strings
  * using at most n bytes from src
- * @dest: input value
+ * @start: input value
  * @src: input value
  * @n: input value
  *

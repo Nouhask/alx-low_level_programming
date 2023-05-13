@@ -3,7 +3,7 @@
  * _memset - fill a block of memory with a set value
  * @s: the beginning of the name of the memory to be filled
  * @b: required value
- * @n: num of bytes to be changed
+ * @a: num of bytes to be changed
  *
  * Return: changed array with new value for a bytes
  */
