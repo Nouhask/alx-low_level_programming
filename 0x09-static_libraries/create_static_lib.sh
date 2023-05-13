@@ -1,4 +1,4 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -c *.c
+gcc -create_static_lib.sh -c *.c
 ar -rc liball.a *.o
 ranlib liball.a
