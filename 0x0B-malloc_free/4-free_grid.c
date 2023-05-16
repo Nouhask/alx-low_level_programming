@@ -9,7 +9,7 @@
  * Return: nothing
  *
  */
-void free_franklin(int **franklin, int marshall)
+void free_grid(int **franklin, int marshall)
 {
 	int cdd;
 
