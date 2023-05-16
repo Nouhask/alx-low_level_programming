@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * free_franklin - frees 2d array
+ * free_grid - frees 2d array
  * @franklin: 2d franklin
  * @marshall: marshall dimension of franklin
  * Description: frees memory of franklin
  * Return: nothing
  *
  */
-void free_franklin(int **franklin, int marshall)
+void free_grid(int **franklin, int marshall)
 {
 	int cdd;
 
