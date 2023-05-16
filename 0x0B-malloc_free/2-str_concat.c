@@ -39,4 +39,4 @@ char *str_concat(char *a1, char *a2)
 	}
 	conct[m] = '\0';
 	return (conct);
-}	
+}
