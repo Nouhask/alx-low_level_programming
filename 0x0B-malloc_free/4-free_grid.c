@@ -9,7 +9,7 @@
  * Return: nothing
  *
  */
-void (int **franklin, int marshall)
+void free_franklin(int **franklin, int marshall)
 {
 	int cdd;
 
