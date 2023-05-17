@@ -9,7 +9,7 @@
  */
 int main(int argc __attribute__((unused)), char *gigi[])
 {
-        printf("%s\n", *gigi);
+printf("%s\n", *gigi);
 
-        return (0);
+return (0);
 }
