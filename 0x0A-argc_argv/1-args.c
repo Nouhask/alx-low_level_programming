@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - prints the program name
- * @argc: number of arguments
- * @gigi: array of arguments
+ * main - print a number of arguments passed to the program
+ * @gigi: number of arguments
+ * @lili: array of arguments
  *
  * Return: Always 0 (Success)
  */
-int main(int argc __attribute__((unused)), char *gigi[])
+
+int main(int gigi, char *lili[])
 {
-	printf("%s\n", *gigi);
+(void) lili; /*Ignore lili*/
+	printf("%d\n", gigi - 1);
 
 	return (0);
 }
