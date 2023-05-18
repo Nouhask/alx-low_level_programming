@@ -2,43 +2,43 @@
 #include "main.h"
 /**
  * *string_nconcat - concatenates n bytes of a string to another string
- * @a1: string to append to
- * @a2: string to concatenate from
- * @i: number of bytes from a2 to concatenate to a1
+ * @s1: string to append to
+ * @s2: string to concatenate from
+ * @n: number of bytes from s2 to concatenate to s1
  *
  * Return: pointer to the resulting string
  */
-char *string_nconcat(char *a1, char *a2, unsigned int i)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *a;
+	char *s;
 	unsigned int l = 0, mo = 0, mozo1 = 0, mozo2 = 0;
 
-	while (a1 && a1[mozo1])
+	while (s1 && s1[mozo1])
 		mozo1++;
-	while (a2 && a2[mozo2])
+	while (s2 && s2[mozo2])
 		mozo2++;
 
-	if (i < mozo2)
-		a = malloc(sizeof(char) * (mozo1 + i + 1));
+	if (n < mozo2)
+		s = malloc(sizeof(char) * (mozo1 + n + 1));
 	else
-		a = malloc(sizeof(char) * (mozo1 + mozo2 + 1));
+		s = malloc(sizeof(char) * (mozo1 + mozo2 + 1));
 
-	if (!a)
+	if (!s)
 		return (NULL);
 
 	while (l < mozo1)
 	{
-		a[l] = a1[l];
+		s[l] = s1[l];
 		l++;
 	}
 
-	while (i < mozo2 && l < (mozo1 + i))
-		a[l++] = a2[mo++];
+	while (n < mozo2 && l < (mozo1 + n))
+		s[l++] = s2[mo++];
 
-	while (i >= mozo2 && l < (mozo1 + mozo2))
-		a[l++] = a2[mo++];
+	while (n >= mozo2 && l < (mozo1 + mozo2))
+		s[l++] = s2[mo++];
 
-	a[l] = '\0';
+	s[l] = '\0';
 
-	return (a);
+	return (s);
 }
