@@ -2,15 +2,15 @@
 #include "main.h"
 /**
  * *malloc_checked - allocates memory using malloc
- * @zizo: number of bytes to allocate
+ * @b: number of bytes to allocate
  *
  * Return: a pointer to the allocated memory
  */
-void *malloc_checked(unsigned int zizo)
+void *malloc_checked(unsigned int b)
 {
 	void *mimi;
 
-	mimi = malloc(zizo);
+	mimi = malloc(b);
 
 	if (mimi == NULL)
 		exit(98);
