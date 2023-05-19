@@ -10,7 +10,7 @@
 int *array_range(int min, int max)
 {
 	int *mimi;
-	int i, size;
+	int uu, size;
 
 	if (min > max)
 		return (NULL);
@@ -22,8 +22,8 @@ int *array_range(int min, int max)
 	if (mimi == NULL)
 		return (NULL);
 
-	for (i = 0; min <= max; size++)
-		mimi[i] = min++;
+	for (uu = 0; min <= max; size++)
+		mimi[uu] = min++;
 
 	return (mimi);
 }
