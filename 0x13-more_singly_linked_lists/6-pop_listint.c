@@ -8,16 +8,16 @@
  */
 int pop_listint(listint_t **head)
 {
- listint_t *tca;
- int fvca;
+listint_t *tca;
+int fvca;
 
- if (!head || !*head)
- return (0);
+if (!head || !*head)
+return (0);
 
- fvca = (*head)->n;
- tca = (*head)->next;
- free(*head);
- *head = tca;
+fvca = (*head)->n;
+tca = (*head)->next;
+free(*head);
+*head = tca;
 
- return (fvca);
+return (fvca);
 }
