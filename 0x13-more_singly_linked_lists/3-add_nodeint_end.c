@@ -26,7 +26,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
  }
 
  while (nnf->next)
- temp = nnf->next;
+ nnf = nnf->next;
 
  nnf->next = nno;
 
