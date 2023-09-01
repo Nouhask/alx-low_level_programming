@@ -1,25 +1,25 @@
 #include "main.h"
 /**
  * print_binary - prints the binary representation of a number
- * @n: number to print in binary
+ * @n: is the number to print in binary
  */
 void print_binary(unsigned long int n)
 {
-	int shishi, adad = 0;
+	int pmcinq, ldr = 0;
 	unsigned long int current;
 
-	for (shishi = 63; shishi >= 0; shishi--)
+	for (pmcinq = 63; pmcinq >= 0; pmcinq--)
 	{
-		current = n >> shishi;
+		current = n >> pmcinq;
 
 		if (current & 1)
 		{
 			_putchar('1');
-			adad++;
+			ldr++;
 		}
-		else if (adad)
+		else if (ldr)
 			_putchar('0');
 	}
-	if (!adad)
+	if (!ldr)
 		_putchar('0');
 }
