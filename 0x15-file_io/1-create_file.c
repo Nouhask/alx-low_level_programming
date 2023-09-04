@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 	ujd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	ljmx = write(ujd, text_content, len);
 
-	if (ujd == -1 || lmx == -1)
+	if (ujd == -1 || ljmx == -1)
 		return (-1);
 
 	close(ujd);
