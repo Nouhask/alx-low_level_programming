@@ -10,19 +10,19 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 	{
-	char *ns;
-	ssize_t kh;
-	ssize_t khn;
-	ssize_t mp;
+	char *nnss;
+	ssize_t khl;
+	ssize_t khnp;
+	ssize_t mpg;
 
-	kh = open(filename, O_RDONLY);
-	if (kh == -1)
+	khl = open(filename, O_RDONLY);
+	if (khl == -1)
 		return (0);
-	ns = malloc(sizeof(char) * letters);
-	mp = read(kh, ns, letters);
-	khn = write(STDOUT_FILENO, ns, mp);
+	nnss = malloc(sizeof(char) * letters);
+	mpg = read(khl, nnss, letters);
+	khnp = write(STDOUT_FILENO, nnss, mpg);
 
-	free(ns);
-	close(kh);
-	return (khn);
+	free(nnss);
+	close(khl);
+	return (khnp);
 }
